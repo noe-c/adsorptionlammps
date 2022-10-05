@@ -1,0 +1,29 @@
+#
+# Protein solvated by water and ions
+#
+
+tolerance 2.0
+filetype pdb
+
+structure arginine.pdb
+  number 1
+  fixed 0. 0. -20.7370 0. 0. 0.
+  centerofmass
+end structure
+
+structure water.pdb
+  number 507
+  inside box -10.0940 -9.9900 -20.7370 10.0940  9.9900  20.7370
+end structure
+
+structure CLA.pdb
+  number 2
+  inside box -10.0940 -9.9900 -20.7370 10.0940  9.9900  20.7370
+end structure
+
+structure SOD.pdb
+  number 1
+  inside box -10.0940 -9.9900 -20.7370 10.0940  9.9900  20.7370
+end structure
+
+output solvproteinau.pdb
